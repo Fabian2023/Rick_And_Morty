@@ -11,7 +11,7 @@ const Detail = () => {
 
 
     useEffect(() => {
-        axios(`http://localhost:3004/rickandmorty/character/${id}`)
+        axios(`http://localhost:3001/rickandmorty/character/${id}`)
         .then(({ data }) => {
            if (data.name) {
               setCharacter(data);

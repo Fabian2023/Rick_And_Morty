@@ -1,7 +1,8 @@
 // el input tiene que ser igual estado y el estado tiene que ser igual al input, se bindea con value en el input
 
+import style from './ComponentForm.module.css'
 import { useState } from "react"
-import validation from './validation/validation'
+import validation from '../validation/validation'
 
 const Form =({login}) =>{
     const [errors, SetErrors]= useState({}) // estado local
@@ -30,19 +31,25 @@ const Form =({login}) =>{
     }
 
     return (
+    <div className={style.contenedor}> 
+    <div className={style.backform}> 
         <form onSubmit={handleSubmit}>
-            <label htmlFor="email">email</label>
+            <label htmlFor="email">E mail</label>
             <input type="email" name='email' value={userData.email} onChange={handleChange}/> 
+            <div className={style.error} >
             {errors.email && <p>{errors.email}</p>}
+            </div>
             <br/>
-            <br/>
-            <label htmlFor="password">password</label>
-            <input type="text" name='password' value={userData.password}  onChange={handleChange}/> 
+            <label htmlFor="password">Password</label>
+            <input type="password" name='password' value={userData.password}  onChange={handleChange}/> 
+           <div className={style.pass}>
             {errors.password && <p>{errors.password}</p>}
+            </div>
             <br/>
-            <br/>
-            <button>Submit</button>
+            <button className={style.submit} >submit</button>
         </form>
+    </div>
+    </div>
     )
 }
 

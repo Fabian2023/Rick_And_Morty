@@ -1,0 +1,86 @@
+.contenedor{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+input[type="email"], input[type="password"] {
+    
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    border: 1px solid #111b0c;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #password {
+    width: calc(100% - 20px);
+  }
+
+  @font-face {
+    font-family: 'Gagalin-Regular.otf';
+    src: url('./fonts/Gagalin-Regular.otf');
+  }
+
+  label {
+    
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Gagalin-Regular.otf';
+    font-size: 20px;
+    color: #2ef3f3ee;
+  }
+  
+
+  .submit{
+    
+    font-family: 'Gagalin-Regular.otf', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    color: #2ef3f3ee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .submit:hover {
+    background-color: #021d0a;
+    color: #faf8fa;
+  }
+
+  .backform {
+    background-image: url('./image/e9450be82bfbd02243a73d96511d8670.jpg');
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Gagalin-Regular.otf', sans-serif;
+    text-align: center;
+    background-size: 100% auto;
+    background-position: center;
+
+  }
+
+  .error{
+    color: #fa0707f3;
+    
+  }
+
+
+  .pass{
+    color: #f8f8faf3;
+    
+
+  }
